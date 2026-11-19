@@ -1,6 +1,8 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permiso para mostrar notificaciones en Android 13 o superior -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
-        <!-- Actividad principal ubicada en el paquete vista -->
+        <!-- Pantalla de estadísticas -->
+        <activity
+            android:name=".vista.EstadisticasActivity"
+            android:exported="false" />
+
+        <!-- Actividad para añadir o editar alimentos -->
+        <activity
+            android:name=".vista.AddEditActivity"
+            android:exported="false" />
+
+        <!-- Actividad principal -->
         <activity
             android:name=".vista.MainActivity"
             android:exported="true">

@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">CaducApp</string>
     <string name="titulo_principal">Mi Despensa</string>
     <string name="lista_vacia">No hay alimentos registrados.\nPulsa + para añadir uno.</string>
+    <string name="lista_sin_resultados">No hay alimentos que coincidan\ncon el filtro o búsqueda.</string>
     <string name="anadir_alimento">Añadir alimento</string>
     <string name="editar_alimento">Editar alimento</string>
     <string name="marcar_consumido">Consumido</string>
+    <string name="estadisticas">Estadísticas</string>
+
+    <!-- Notificaciones y permisos -->
+    <string name="canal_nombre_caducidad">Avisos de caducidad</string>
+    <string name="canal_desc_caducidad">Notificaciones diarias sobre alimentos que caducan en 2 días o menos</string>
+    <string name="notif_titulo_urgente">¡Alimentos por caducar!</string>
+    <string name="permiso_notif_rechazado">Sin permiso de notificaciones no podremos avisarte a las 9:00</string>
+
+    <!-- Pantalla de estadísticas -->
+    <string name="titulo_estadisticas">Tus Estadísticas</string>
+    <string name="subtitulo_estadisticas">Resumen contra el desperdicio alimentario</string>
+    <string name="label_alimentos_aprovechados">Alimentos aprovechados</string>
+    <string name="desc_aprovechados">Marcados como consumidos antes de perderse</string>
+    <string name="label_alimentos_caducados">Alimentos caducados</string>
+    <string name="desc_caducados">Caducados en despensa y eliminados caducados</string>
+    <string name="label_tasa_aprovechamiento">Tasa de aprovechamiento</string>
+
+    <!-- Buscador y filtro -->
+    <string name="hint_buscar_nombre">Buscar por nombre...</string>
+    <string name="todas_categorias">Todas las categorías</string>
 
     <!-- Etiquetas y pistas del formulario -->
     <string name="hint_nombre">Nombre del alimento</string>
@@ -23,6 +45,7 @@
     <string name="mensaje_confirmar_eliminar">¿Seguro que quieres eliminar este alimento?</string>
     <string name="si">Sí, eliminar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="alimento_consumido_msg">¡Aprovechado! +1 en estadísticas</string>
 
     <!-- Categorías disponibles -->
     <string-array name="categorias_alimentos">
@@ -34,4 +57,5 @@
         <item>Congelado</item>
         <item>Otros</item>
     </string-array>
+
 </resources>
