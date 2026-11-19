@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta principal de CaducApp -->
+    <color name="primary">#2E7D32</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="accent">#FF8F00</color>
+    <color name="background_light">#F5F7F5</color>
+
+    <!-- Indicadores de urgencia de caducidad -->
+    <color name="urgencia_roja">#D32F2F</color>
+    <color name="urgencia_naranja">#F57C00</color>
+    <color name="urgencia_verde">#388E3C</color>
+
+    <!-- Fondos suaves para las etiquetas de días restantes -->
+    <color name="fondo_rojo_suave">#FFEBEE</color>
+    <color name="fondo_naranja_suave">#FFF3E0</color>
+    <color name="fondo_verde_suave">#E8F5E9</color>
+</resources>

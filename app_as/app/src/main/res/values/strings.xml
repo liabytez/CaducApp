@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CaducApp</string>
+    <string name="titulo_principal">Mi Despensa</string>
+    <string name="lista_vacia">No hay alimentos registrados.\nPulsa + para añadir uno.</string>
+    <string name="anadir_alimento">Añadir alimento</string>
+    <string name="editar_alimento">Editar alimento</string>
+    <string name="marcar_consumido">Consumido</string>
+
+    <!-- Etiquetas y pistas del formulario -->
+    <string name="hint_nombre">Nombre del alimento</string>
+    <string name="label_categoria">Categoría</string>
+    <string name="hint_cantidad">Cantidad (ej. 2 unidades, 500g)</string>
+    <string name="hint_fecha_caducidad">Fecha de caducidad</string>
+    <string name="btn_guardar">Guardar alimento</string>
+    <string name="btn_eliminar">Eliminar alimento</string>
+
+    <!-- Mensajes de validación y confirmación -->
+    <string name="error_nombre_vacio">Introduce el nombre del alimento</string>
+    <string name="error_cantidad_vacio">Introduce la cantidad</string>
+    <string name="error_fecha_vacio">Selecciona una fecha de caducidad</string>
+    <string name="titulo_confirmar_eliminar">Confirmar eliminación</string>
+    <string name="mensaje_confirmar_eliminar">¿Seguro que quieres eliminar este alimento?</string>
+    <string name="si">Sí, eliminar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- Categorías disponibles -->
+    <string-array name="categorias_alimentos">
+        <item>Lácteos</item>
+        <item>Carne</item>
+        <item>Pescado</item>
+        <item>Verdura</item>
+        <item>Fruta</item>
+        <item>Congelado</item>
+        <item>Otros</item>
+    </string-array>
+</resources>
