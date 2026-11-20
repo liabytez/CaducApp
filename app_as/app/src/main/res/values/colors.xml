@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Colores básicos -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Paleta principal de CaducApp -->
-    <color name="primary">#2E7D32</color>
-    <color name="primary_dark">#1B5E20</color>
-    <color name="accent">#FF8F00</color>
-    <color name="background_light">#F5F7F5</color>
+    <!-- Identidad visual Organic Modern -->
+    <color name="primary">#174D3A</color>
+    <color name="primary_dark">#103B2C</color>
+    <color name="accent">#F2A65A</color>
 
-    <!-- Indicadores de urgencia de caducidad -->
+    <!-- Fondos y superficies -->
+    <color name="background_light">#F5F3E9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_mint">#E5F0E6</color>
+    <color name="surface_peach">#FFF0DF</color>
+
+    <!-- Textos -->
+    <color name="text_primary">#24352B</color>
+    <color name="text_secondary">#68796D</color>
+
+    <!-- Detalles -->
+    <color name="divider">#E5EAE3</color>
+    <color name="mint">#B8DCC1</color>
+    <color name="leaf">#3D8060</color>
+    <color name="cream">#F5F3E9</color>
+    <color name="peach">#F2A65A</color>
+
+    <!-- Indicadores de urgencia -->
     <color name="urgencia_roja">#B71C1C</color>
     <color name="urgencia_naranja">#8A4B00</color>
     <color name="urgencia_verde">#1B5E20</color>
 
-    <!-- Fondos suaves para las etiquetas de días restantes -->
+    <!-- Fondos suaves de urgencia -->
     <color name="fondo_rojo_suave">#FFEBEE</color>
     <color name="fondo_naranja_suave">#FFF3E0</color>
     <color name="fondo_verde_suave">#E8F5E9</color>
+
 </resources>

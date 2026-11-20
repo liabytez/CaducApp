@@ -6,39 +6,46 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="12dp"
-    android:layout_marginVertical="6dp"
-    app:cardCornerRadius="12dp"
+    android:layout_marginVertical="7dp"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="20dp"
     app:cardElevation="3dp"
-    app:strokeWidth="0dp">
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!-- Barra lateral de color según la urgencia -->
+        <!-- Indicador lateral de urgencia -->
         <View
             android:id="@+id/viewIndicadorColor"
-            android:layout_width="8dp"
+            android:layout_width="7dp"
             android:layout_height="match_parent"
             android:background="@color/urgencia_verde" />
 
-        <!-- Contenedor principal de la información -->
+        <!-- Información del alimento -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="12dp">
+            android:paddingStart="14dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="16dp">
 
-            <!-- Nombre del alimento -->
+            <!-- Nombre -->
             <TextView
                 android:id="@+id/tvNombreAlimento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
                 android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
                 tools:text="Leche Entera" />
 
             <!-- Categoría y cantidad -->
@@ -46,60 +53,66 @@
                 android:id="@+id/tvCategoriaCantidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:textColor="#555555"
-                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/leaf"
+                android:textSize="13sp"
                 tools:text="Lácteos • 2 cartones" />
 
-            <!-- Fecha de caducidad -->
+            <!-- Fecha -->
             <TextView
                 android:id="@+id/tvFechaCaducidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:textColor="#757575"
-                android:textSize="13sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
                 tools:text="Caduca: 25/11/2026" />
 
         </LinearLayout>
 
-        <!-- Columna derecha: días restantes y botón -->
+        <!-- Estado y acción -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center_vertical|end"
+            android:gravity="center"
             android:orientation="vertical"
-            android:paddingEnd="12dp"
             android:paddingStart="4dp"
-            android:paddingVertical="8dp">
+            android:paddingEnd="12dp"
+            android:paddingVertical="10dp">
 
-            <!-- Etiqueta con los días restantes -->
+            <!-- Días restantes -->
             <TextView
                 android:id="@+id/tvDiasRestantes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/fondo_verde_suave"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="4dp"
-                android:textColor="@color/primary_dark"
+                android:background="@drawable/bg_etiqueta_caducidad"
+                android:gravity="center"
+                android:minWidth="76dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="7dp"
+                android:textColor="@color/urgencia_verde"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:text="En 6 días" />
 
-            <!-- Botón para marcar como consumido -->
+            <!-- Marcar como consumido -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnConsumido"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="6dp"
                 android:minWidth="0dp"
                 android:minHeight="48dp"
-                android:paddingHorizontal="8dp"
+                android:paddingHorizontal="6dp"
                 android:text="@string/marcar_consumido"
-                android:textSize="12sp"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:maxLines="1"
                 app:icon="@android:drawable/checkbox_on_background"
-                app:iconSize="16dp" />
+                app:iconSize="16dp"
+                app:iconTint="@color/leaf"
+                app:iconPadding="3dp" />
 
         </LinearLayout>
 
